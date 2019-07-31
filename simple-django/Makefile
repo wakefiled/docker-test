@@ -13,4 +13,4 @@ docker_clear:
 	docker image rm $(CONTAINER_NAME)
 
 connect:
-	docker run --rm -it -p -v $(PWD)/test:/work 8000:8000 $(CONTAINER_NAME) bash
+	docker run --rm -it -v $(PWD)/test:/work -p 8000:8000 $(CONTAINER_NAME) bash
