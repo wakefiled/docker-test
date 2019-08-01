@@ -2,6 +2,17 @@
 
   This repository was created with reference to [gin docker official](https://hub.docker.com/_/golang).
 
+## Recommend Enviornment
+
+OS: Ubuntu 18.04 LTS
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get install -y openjdk-8-jdk
+$ sudo apt-get install -y gradle
+$ sudo apt-get install -y maven
+```
+
 ## Simple Commands
 
 ### Start simple gin backend.
