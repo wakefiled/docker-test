@@ -11,3 +11,5 @@ RUN apt-get install -y vim
 RUN go get github.com/gin-gonic/gin
 
 WORKDIR /work
+EXPOSE 8080
+CMD ["./mygin"]
