@@ -2,15 +2,13 @@ NAME = hello
 TAG  = django
 CONTAINER_NAME = $(NAME):$(TAG)
 
-.PHONY: all docker_build build connect
+.PHONY: all build clear
 
 all: build
 
-docker_build:
+build:
 	docker build -t $(CONTAINER_NAME) --rm .
 
-docker_clear:
+clear:
 	docker image rm $(CONTAINER_NAME)
 
-connect:
-	docker run --rm -it -v $(PWD)/test:/work -p 8000:8000 $(CONTAINER_NAME) bash
